@@ -58,3 +58,48 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
+/* Hero con imagen de fondo */
+.hero {
+  position: relative;
+  height: 100vh; /* ocupa toda la pantalla */
+  background: url('../img/hero.jpg') center/cover no-repeat; /* tu imagen de portada */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* Capa oscura encima de la imagen para resaltar texto */
+.hero .overlay {
+  background: rgba(0,0,0,0.5); /* oscurece la foto */
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+/* Títulos */
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Playfair Display', serif; /* tipografía elegante */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+/* Countdown */
+#countdown {
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#countdown span {
+  display: inline-block;
+  min-width: 60px; /* ancho fijo para que no se muevan los números */
+}
+
