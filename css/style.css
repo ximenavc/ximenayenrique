@@ -1,0 +1,60 @@
+body {
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  background: #fffaf7;
+  color: #333;
+}
+
+header {
+  background: #b48a78;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: url('../img/hero.jpg') center/cover no-repeat;
+  color: white;
+}
+
+section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 200px;
+  border-radius: 10px;
+}
+footer {
+  background: #b48a78;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
