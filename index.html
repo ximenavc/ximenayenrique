@@ -3,77 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Boda Abigail & René</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Invitación de Boda</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navegación -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Inicio</a></li>
-        <li><a href="#ceremonia">Ceremonia</a></li>
-        <li><a href="#recepcion">Recepción</a></li>
-        <li><a href="#historia">Nuestra Historia</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Animación del sobre -->
+  <div class="envelope">
+    <div class="flap"></div>
+    <div class="letter">
+      <h1>Ximena & [Nombre]</h1>
+      <p>¡Nos casamos!</p>
+      <p>11 de Julio, 2026 · Ciudad de México</p>
+      <button onclick="openInvitation()">Abrir invitación</button>
+    </div>
+  </div>
 
-  <!-- Encabezado con imagen y cuenta regresiva -->
-  <section class="hero">
-    <div class="overlay">
-      <h1>Abigail & René</h1>
-      <p>¡Nuestra boda se acerca!</p>
-      <p><strong>20 de Octubre, 2023</strong> · Guadalajara</p>
-      <div id="countdown">
-        <span id="days"></span> :
-        <span id="hours"></span> :
-        <span id="minutes"></span> :
-        <span id="seconds"></span>
+  <!-- Contenido oculto que aparece al abrir -->
+  <main id="invitation" class="hidden">
+    <!-- Contador -->
+    <section class="countdown">
+      <h2>Faltan...</h2>
+      <div id="timer"></div>
+    </section>
+
+    <!-- Detalles -->
+    <section class="details">
+      <h2>Detalles del evento</h2>
+      <p>Ceremonia: 5:00 PM en [Lugar]</p>
+      <p>Recepción: 7:00 PM en [Lugar]</p>
+    </section>
+
+    <!-- Galería -->
+    <section class="gallery">
+      <h2>Nuestros momentos</h2>
+      <div class="photos">
+        <img src="foto1.jpg" alt="Foto 1">
+        <img src="foto2.jpg" alt="Foto 2">
+        <img src="foto3.jpg" alt="Foto 3">
       </div>
-    </div>
-  </section>
+    </section>
 
-  
-  <!-- Portada -->
-  <section id="home" class="hero">
-    <h1>Abigail & René</h1>
-    <p>¡Nuestra boda se acerca!</p>
-    <p><strong>28 de Noviembre, 2026</strong> · Ciudad de México</p>
-  </section>
+    <!-- Mapa -->
+    <section class="map">
+      <h2>Ubicación</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." 
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
 
-  <!-- Ceremonia -->
-  <section id="ceremonia">
-    <h2>Ceremonia</h2>
-    <p>4:00 PM · Parroquia San José</p>
-  </section>
+    <!-- RSVP -->
+    <section class="rsvp">
+      <h2>Confirma tu asistencia</h2>
+      <iframe src="https://docs.google.com/forms/d/e/TUFORMULARIO/viewform?embedded=true"
+              width="100%" height="600" frameborder="0">Cargando…</iframe>
+    </section>
 
-  <!-- Recepción -->
-  <section id="recepcion">
-    <h2>Recepción</h2>
-    <p>7:00 PM · Salón Eninche</p>
-  </section>
+    <!-- Cierre -->
+    <section class="closing">
+      <h2>Gracias por acompañarnos</h2>
+      <p>Con amor, Ximena & [Nombre]</p>
+    </section>
+  </main>
 
-  <!-- Historia -->
-  <section id="historia">
-    <h2>Nuestra Historia</h2>
-    <p>Un breve relato de cómo comenzó todo...</p>
-  </section>
-
-  <!-- Galería -->
-  <section id="galeria">
-    <h2>Galería</h2>
-    <div class="gallery">
-      <img src="Images/WhatsApp Image 2026-03-06 at 12.49.54 AM.jpeg" alt="Foto 1">
-      <img src="Images/WhatsApp Image 2026-03-06 at 12.49.54 AM.jpeg" alt="Foto 2">
-    </div>
-  </section>
-
-  <!-- Contacto -->
-  <footer id="contacto">
-    <p>¿Preguntas? Escríbenos: <a href="mailto:ximena.velezch@gmail.com">abigailyrene@gmail.com</a></p>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
+
