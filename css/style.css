@@ -4,8 +4,8 @@
 body {
   margin: 0;
   font-family: 'Playfair Display', serif;
-  background: #f8f6f2; /* tono lino/beige */
-  color: #2e2e2e;      /* gris oscuro elegante */
+  background: linear-gradient(180deg, #6C2735 0%, #4A1C26 100%); /* Cabernet degradado */
+  color: #ffffff; /* texto en blanco */
   text-align: center;
 }
 
@@ -82,91 +82,7 @@ button:hover, .btn:hover {
 /* Secciones */
 section {
   padding: 60px 20px;
-  background: #fff;
   margin: 30px auto;
   max-width: 900px;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-}
-
-/* Contador */
-.countdown #timer {
-  font-size: 2.2rem;
-  margin-top: 20px;
-  color: #7a1c1c;
-  font-weight: bold;
-}
-
-/* Galería */
-.gallery .photos {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.gallery img {
-  width: 170px;
-  border-radius: 14px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-  transition: transform 0.3s, filter 0.3s;
-}
-
-.gallery img:hover {
-  transform: scale(1.08);
-  filter: brightness(1.1);
-}
-
-/* Mapa */
-.map iframe {
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
-}
-
-/* Cierre */
-.closing {
-  background: #f8f6f2;
-  color: #2e2e2e;
-  font-style: italic;
-}
-
-/* Fondo */
-body {
-  background-color: #6C2735; /* tono aproximado al Pantone Cabernet */
-  color: #ffffff; /* texto en blanco para contraste elegante */
-  font-family: 'Helvetica Neue', sans-serif;
-}
-
-body {
-  background: linear-gradient(180deg, #6C2735 0%, #4A1C26 100%);
-  color: #ffffff;
-}
-
-.cabernet-bg {
-  background-color: #6C2735;
-  color: #fff;
-  padding: 20px;
-}
-
-/* RSVP */
-.cabernet-bg {
-  background-color: #6C2735; /* Cabernet */
-  color: #fff;
-  padding: 40px;
-  text-align: center;
-  border-radius: 12px;
-}
-
-.cabernet-bg h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2em;
-  margin-bottom: 10px;
-  color: #FFD700; /* Dorado elegante */
-}
-
-.cabernet-bg p {
-  font-family: 'Helvetica Neue', sans-serif;
-  font-size: 1.1em;
-  margin-bottom: 20px;
-}
-
+  box-shadow
