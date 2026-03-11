@@ -1,94 +1,23 @@
-body {
-  margin: 0;
-  font-family: 'Playfair Display', serif;
-  background: #fdfdfd;
-  color: #333;
-  text-align: center;
-}
-
-/* Animación del sobre */
-.envelope {
-  position: relative;
-  width: 300px;
-  height: 200px;
-  margin: 100px auto;
-  background: #c19a6b;
-  border-radius: 10px;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.flap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: #a67c52;
-  transform-origin: top;
-  transition: transform 1s ease;
-}
-
-.envelope.open .flap {
-  transform: rotateX(-180deg);
-}
-
-.letter {
-  padding: 20px;
-  color: white;
-}
-
-.hidden {
-  display: none;
-}
-
-/* Secciones */
-section {
-  padding: 50px 20px;
-}
-
-.countdown #timer {
-  font-size: 2rem;
-  margin-top: 20px;
-}
-
-.gallery .photos {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.gallery img {
-  width: 150px;
-  border-radius: 10px;
-  transition: transform 0.3s;
-}
-
-.gallery img:hover {
-  transform: scale(1.1);
-}
-
-
 /* Tipografía premium */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap');
 
 body {
   margin: 0;
   font-family: 'Playfair Display', serif;
-  background: #fdfdfd;
-  color: #333;
+  background: #f8f6f2; /* tono lino/beige */
+  color: #2e2e2e;      /* gris oscuro elegante */
   text-align: center;
 }
 
-/* Portada */
+/* Portada - sobre */
 .envelope {
   position: relative;
-  width: 320px;
-  height: 220px;
+  width: 340px;
+  height: 240px;
   margin: 100px auto;
-  background: linear-gradient(135deg, #c19a6b, #a67c52);
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  background: linear-gradient(135deg, #d9c7a3, #b89b72); /* dorado suave */
+  border-radius: 12px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
   overflow: hidden;
   cursor: pointer;
   perspective: 1000px;
@@ -99,8 +28,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 110px;
-  background: #a67c52;
+  height: 120px;
+  background: #a67c52; /* marrón cálido */
   transform-origin: top;
   transition: transform 1s ease;
 }
@@ -110,10 +39,11 @@ body {
 }
 
 .letter {
-  padding: 20px;
-  color: white;
+  padding: 25px;
+  color: #fff;
   font-family: 'Great Vibes', cursive;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
 /* Animación de aparición */
@@ -123,7 +53,7 @@ body {
 
 main section {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(40px);
   transition: all 1s ease;
 }
 
@@ -134,37 +64,69 @@ main section.visible {
 
 /* Botón elegante */
 button, .btn {
-  background: #c19a6b;
+  background: #7a1c1c; /* rojo vino inspirado en anturios y frutos */
   color: white;
-  padding: 12px 25px;
+  padding: 12px 28px;
   border: none;
-  border-radius: 30px;
+  border-radius: 35px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.2s;
 }
 
 button:hover, .btn:hover {
-  background: #a67c52;
+  background: #5a1414;
+  transform: scale(1.05);
+}
+
+/* Secciones */
+section {
+  padding: 60px 20px;
+  background: #fff;
+  margin: 30px auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Contador */
+.countdown #timer {
+  font-size: 2.2rem;
+  margin-top: 20px;
+  color: #7a1c1c;
+  font-weight: bold;
 }
 
 /* Galería */
 .gallery .photos {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 .gallery img {
-  width: 160px;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  transition: transform 0.3s;
+  width: 170px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  transition: transform 0.3s, filter 0.3s;
 }
 
 .gallery img:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
+  filter: brightness(1.1);
 }
 
+/* Mapa */
+.map iframe {
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+/* Cierre */
+.closing {
+  background: #f8f6f2;
+  color: #2e2e2e;
+  font-style: italic;
+}
 
