@@ -148,3 +148,25 @@ body {
   padding: 20px;
 }
 
+/* RSVP */
+.cabernet-bg {
+  background-color: #6C2735; /* Cabernet */
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.cabernet-bg h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #FFD700; /* Dorado elegante */
+}
+
+.cabernet-bg p {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
