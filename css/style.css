@@ -1,105 +1,70 @@
 body {
-  font-family: 'Georgia', serif;
   margin: 0;
-  padding: 0;
-  background: #fffaf7;
-  color: #333;
-}
-
-header {
-  background: #b48a78;
-  padding: 1rem;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.hero {
-  text-align: center;
-  padding: 5rem 2rem;
-  background: url('../Images/WhatsApp Image 2026-03-06 at 12.58.41 AM.jpg') center/cover no-repeat;
-  color: white;
-}
-
-section {
-  padding: 3rem 2rem;
-  text-align: center;
-}
-
-h1, h2 {
   font-family: 'Playfair Display', serif;
+  background: #fdfdfd;
+  color: #333;
+  text-align: center;
 }
 
-.gallery {
+/* Animación del sobre */
+.envelope {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin: 100px auto;
+  background: #c19a6b;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.flap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: #a67c52;
+  transform-origin: top;
+  transition: transform 1s ease;
+}
+
+.envelope.open .flap {
+  transform: rotateX(-180deg);
+}
+
+.letter {
+  padding: 20px;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Secciones */
+section {
+  padding: 50px 20px;
+}
+
+.countdown #timer {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.gallery .photos {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 10px;
 }
 
 .gallery img {
-  width: 200px;
+  width: 150px;
   border-radius: 10px;
-}
-footer {
-  background: #b48a78;
-  color: white;
-  text-align: center;
-  padding: 1rem;
+  transition: transform 0.3s;
 }
 
-/* Hero con imagen de fondo */
-.hero {
-  position: relative;
-  height: 100vh; /* ocupa toda la pantalla */
-  background: url('../Images/WhatsApp Image 2026-03-06 at 12.58.41 AM.jpg') center/cover no-repeat; /* tu imagen de portada */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-}
-
-/* Capa oscura encima de la imagen para resaltar texto */
-.hero .overlay {
-  background: rgba(0,0,0,0.5); /* oscurece la foto */
-  padding: 2rem;
-  border-radius: 10px;
-}
-
-/* Títulos */
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-  font-family: 'Playfair Display', serif; /* tipografía elegante */
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin: 0.5rem 0;
-}
-
-/* Countdown */
-#countdown {
-  font-size: 2rem;
-  margin-top: 1rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-#countdown span {
-  display: inline-block;
-  min-width: 60px; /* ancho fijo para que no se muevan los números */
+.gallery img:hover {
+  transform: scale(1.1);
 }
 
